@@ -3,7 +3,6 @@ package io.lishman.springdata.jpa.repository;
 import io.lishman.springdata.jpa.config.Config;
 import io.lishman.springdata.jpa.config.TestConfig;
 import io.lishman.springdata.jpa.domain.Continent;
-import io.lishman.springdata.jpa.repository.ContinentRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,7 +39,7 @@ public class ContinentRepositoryTest {
     @Test
     public void testFindAll() {
         List<Continent> continents = continentRepo.findAll();
-        assertThat(continents.toString(), equalTo("[Africa, Asia, Europe, North America, South America, Oceania, Antarctica]"));
+        assertThat(continents.toString(), equalTo("[Africa, Antarctica, Asia, Europe, North America, Oceania, South America]"));
     }
     
     //------------------------------------------------- find all with sort
