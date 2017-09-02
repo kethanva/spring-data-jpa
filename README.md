@@ -1,3 +1,8 @@
 # spring-data-jpa
 
-Examples of `JpaRepository` queries using custom query methods and `@Query` annotations. Includes between, like, ignore case, logical and/or queries, and more.
+Application showing how to create and configure Spring Data JPA repositories to run CRUD operations and queries.
+
+Used by various tutorials and examples at [lishman.io](http://lishman.io)
+
+
+
